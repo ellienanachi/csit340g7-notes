@@ -13,6 +13,15 @@ function Notes() {
             className="h-[52px] w-full border border-[#e6e6e6] px-4 text-lg outline-none placeholder:text-black/40 placeholder:italic focus:border-[#cf7d7d]"
           />
         </div>
+         
+        <form className="grid gap-3">
+          <p className="text-[13px] font-normal tracking-wide text-[#949494]">NEW NOTE</p>
+          <input
+            name="title"
+            placeholder="Title"
+            className="h-[52px] w-full border border-[#e6e6e6] px-4 text-lg outline-none placeholder:text-black/40 placeholder:italic focus:border-[#cf7d7d]"
+          />
+        </form>
      </aside>
     </div>
   )
