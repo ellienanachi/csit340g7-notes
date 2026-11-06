@@ -26,6 +26,12 @@ function Notes() {
             placeholder="Write your note"
             className="h-[120px] w-full resize-none py-3 border border-[#e6e6e6] px-4 text-lg outline-none placeholder:text-black/40 placeholder:italic focus:border-[#cf7d7d]"
           />
+            <button
+            type="submit"
+            className="h-[50px] cursor-pointer bg-[#b83f45] text-[17px] font-normal text-white hover:bg-[#a33439]"
+          >
+            Add note
+            </button>
         </form>
      </aside>
     </div>
