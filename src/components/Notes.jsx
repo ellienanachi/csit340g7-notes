@@ -34,6 +34,10 @@ function Notes() {
             </button>
         </form>
      </aside>
+     
+      <section className="px-12 py-11">
+        <h2 className="mb-6 text-3xl">All notes</h2>
+      </section>
     </div>
   )
 }
