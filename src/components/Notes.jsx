@@ -1,4 +1,4 @@
-import NoteCard from './NoteCard.jsx'
+import NoteCard from './NoteCard.jsx
 
 function Notes() {
   return (
