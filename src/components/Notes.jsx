@@ -21,6 +21,11 @@ function Notes() {
             placeholder="Title"
             className="h-[52px] w-full border border-[#e6e6e6] px-4 text-lg outline-none placeholder:text-black/40 placeholder:italic focus:border-[#cf7d7d]"
           />
+            <textarea
+            name="body"
+            placeholder="Write your note"
+            className="h-[120px] w-full resize-none py-3 border border-[#e6e6e6] px-4 text-lg outline-none placeholder:text-black/40 placeholder:italic focus:border-[#cf7d7d]"
+          />
         </form>
      </aside>
     </div>
