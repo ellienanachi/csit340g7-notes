@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useMemo } from 'react'
 import NoteCard from './NoteCard.jsx'
 
   const startingNotes = [
@@ -26,14 +26,15 @@ function Notes() {
     useEffect(() => {
       const id = setTimeout(() => {
         localStorage.setItem('draft', JSON.stringify(form))
-        console.log('draft saved:', form.title)
       }, 1000)
       return () => clearTimeout(id)
     }, [form])
 
-    const shownNotes = notes.filter((note) =>
+    const shownNotes = useMemo(() => {
+      return notes.filter((note) =>
         note.title.toLowerCase().includes(search.toLowerCase())
-    )
+      )
+    }, [notes, search])
 
     function handleChange(e) {
         setForm({ ...form, [e.target.name]: e.target.value })
